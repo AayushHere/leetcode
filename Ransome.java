@@ -6,8 +6,8 @@ class Solution {
        for(i=0;i<ch1.length;i++){
            for(j=0;j<ch2.length;j++){
                if(ch2[j]==ch1[i]){
-                   ch2[j]=' '; 
-                   count++;
+                   ch2[j]=' ';// make a space  
+                   count++
                    break;
                }
            }
