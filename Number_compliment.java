@@ -1,11 +1,8 @@
-class comp
-{
-    public static void main(String[] args) {
-        Scanner s= new Scanner(System.in);
-        int n= s.nextInt();
-        String ss="";
+class Solution {
+    public int findComplement(int num) {
+         String ss="";
         
-        ss= Integer.toBinaryString(n);
+        ss= Integer.toBinaryString(num);
 
         char  ch[]= ss.toCharArray();
         for(int i=0;i<ch.length;i++)
@@ -19,11 +16,11 @@ class comp
                 ch[i]='0';
             }
         }
-     
-        String a= new String(ch);
+               String a= new String(ch);
        
         int decimal = Integer.parseInt(a, 2);
-        System.out.print(decimal);
+        return decimal;
+        
         
     }
 }
